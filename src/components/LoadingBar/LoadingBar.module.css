@@ -1,0 +1,36 @@
+/* Inner track — inside the white pill border on ErdoganXP Loader.png */
+.trackOverlay {
+  position: absolute;
+  left: 29.2%;
+  top: 87.8%;
+  width: 39.2%;
+  height: 4.6%;
+  overflow: hidden;
+  border-radius: 999px;
+  clip-path: inset(0 round 3px);
+}
+
+/*
+  One copy: travel fully off-screen left → off-screen right.
+  The loop reset (-20% → 100% jump) happens while the cubes are clipped
+  outside the track, so they appear to exit right and re-enter from the left.
+*/
+.cubes {
+  position: absolute;
+  top: 50%;
+  height: 62%;
+  width: auto;
+  transform: translateY(-50%);
+  image-rendering: pixelated;
+  animation: crossTrack 1.75s linear infinite;
+}
+
+@keyframes crossTrack {
+  from {
+    left: -20%;
+  }
+
+  to {
+    left: 100%;
+  }
+}

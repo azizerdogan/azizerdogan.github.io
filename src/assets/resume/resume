@@ -1,0 +1,57 @@
+[ProfessionalSummary]
+Detail-oriented and technically proficient QA Engineer with a background in Computer Science and over 4 years of experience executing manual and automated software testing across web, mobile, and backend systems. Proven track record of designing comprehensive test cases, identifying software defects, and optimizing test coverage within active Agile development teams. Strong technical aptitude in utilizing testing toolchains (Selenium WebDriver, Appium, Playwright) paired with data validation skills using SQL to run backend integrity checks, analyze error logs, and track quality metrics. A disciplined problem solver focused on cross-functional collaboration to prevent defect leakage and ensure high-stability product releases.
+
+[TechnicalSkills]
+Testing Core & Frameworks = Selenium WebDriver, Appium, Playwright, Cypress, Cucumber (BDD), Manual Testing, Functional Testing, Regression Testing, Smoke Testing
+Data & Scripting Languages = SQL (Queries, Joins, Constraints), Python, JavaScript, HTML5, CSS3, Java Basics
+API Testing = REST APIs, Postman, JSON Payload Validation, API Contract Verification
+Data Quality & Analytics = Data Reconciliation, Relational Database Interrogation, Server Log Parsing, Metric Tracking (Defect Density, Open Defect Counts), Boundary Analysis
+DevOps & Software Tools = Jira, GitHub Actions, Git Version Control, Test Case Management Software (Zephyr, TestRail)
+Methodologies =	Agile / Scrum, Sprint Planning, Bug Lifecycle Management, Software Development Life Cycle (SDLC)
+
+[ProfessionalExperience]
+Wondr Health | Dallas, TX
+QA Automation Engineer | Nov 2022 – Feb 2024
+
+1. Executed a hybrid testing matrix combining manual exploratory testing with automated regression testing scripts using JavaScript and Playwright to secure web application quality.
+2. Utilized Selenium and Appium to write and run automated verification paths for native iOS and Android features, ensuring mobile application parity.
+3. Authored clean, reusable behavior-driven development (BDD) test scenarios using Cucumber syntax to trace feature specifications directly to functional code.
+4. Maintained automated quality testing steps within continuous delivery pipelines (CI/CD via GitHub Actions) to flag runtime application errors early in the sprint cycle.
+5. Tracked software anomalies and open defect profiles natively inside Jira, managing quality metrics such as defect density to drive internal product development process improvements.
+
+TreviPay | Overland Park, KS
+QA Engineer | Aug 2020 – Nov 2022
+1. Conducted methodical functional, system integration (SIT), and regression testing across distributed web architectures and multi-platform digital systems.
+2. Leveraged SQL database queries to perform data validation, execute backend data reconciliation checks, and verify table schema requirements across system lines.
+3. Evaluated API endpoints and interface layer performance by configuring and running functional integration test runs via Postman.
+4. Created and maintained detailed test plans, comprehensive manual test cases, and traceability matrices to ensure maximum functional coverage based on user acceptance criteria.
+5. Documented exhaustive bug files and root-cause replication steps, collaborating directly with software engineers to troubleshoot and resolve edge-case system malfunctions.
+
+Cboe | Lenexa, KS
+QA Engineer | Jan 2020 – Aug 2020
+
+1. Performed integration verification, smoke testing, and baseline performance monitoring on streaming software data channels to identify performance degradation.
+2. Written foundational Python utility routines to parse unstructured server text logs, translating raw environment outputs into actionable bug-tracking patterns.
+3. Participated in daily stand-ups and technical triage processes within an active Agile/Scrum framework to analyze system requirements and identify product errors.
+4. Managed testing assets, custom verification scripts, and documentation files natively via Git version control systems.
+
+[Education]
+University of Central Missouri | Warrensburg, MO
+Bachelor of Science in Computer Science | Graduation Date: Dec 2025
+
+[VolunteerExperience]
+ROBLOX Project | Remote
+Lead QA Analyst | Feb 2024 – Current
+
+1. Orchestrate simulated multi-client local server environments inside Roblox Studio to validate network replication logic, test server-client remote events, and isolate multi-user synchronization lag.
+2. Execute rigorous cross-platform compatibility testing across PC, iOS, and Android mobile surfaces to ensure UI layout adaptation, touch-input responsiveness, and baseline frame-rate optimization.
+3. Perform detailed data validation and state audits on player DataStores, monitoring JSON schema persistence layers to prevent data loss or transactional saving bottlenecks during server disconnects.
+4. Leverage custom Python utilities to harvest and parse complex runtime error logs from the Developer Console, transforming raw error streams into data-backed defect trends and structured bug reports.
+5. Conduct extensive exploratory and functional regression passes on physics configurations, script event triggers, and system hitboxes to intercept logic vulnerabilities before build deployment.
+6. Govern the community defect tracking pipeline, translating user-submitted telemetry reports into clear, developer-friendly reproduction steps and prioritizing hotfixes based on gameplay severity.
+
+[Languages]
+1. English (Fluent)
+2. Turkish (Fluent)
+3. Azeri (Fluent)
+4. Japanese (Intermediate)

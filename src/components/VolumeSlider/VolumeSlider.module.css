@@ -1,0 +1,85 @@
+.panel {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  right: -4px;
+  z-index: 200;
+  padding: 10px;
+  background: #f1f1f1;
+  border: 1px solid #0054e3;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.label {
+  font-family: var(--font-xp);
+  font-size: 11px;
+  color: #000000;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.trackArea {
+  display: flex;
+  justify-content: center;
+  width: 34px;
+  min-width: 34px;
+}
+
+.track {
+  position: relative;
+  width: 4px;
+  height: 75px;
+  border-radius: 9px;
+  background: #f3f2ea;
+  box-shadow:
+    inset 1px 1px 0 rgba(0, 0, 0, 0.25),
+    inset -1px -1px 0 #fefefe;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 9px;
+  margin-left: -10px;
+  border: 1px solid #8da8b9;
+  border-radius: 2px;
+  background: #f3f3ef;
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 3px rgba(0, 0, 0, 0.33);
+  pointer-events: none;
+}
+
+.thumb::before,
+.thumb::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #22be20;
+}
+
+.thumb::before {
+  left: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.thumb::after {
+  right: 0;
+  border-radius: 0 2px 2px 0;
+}
+
+.thumbDragging {
+  filter: brightness(0.96);
+}

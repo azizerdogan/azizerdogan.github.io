@@ -1,0 +1,201 @@
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-brand);
+  background: #00319c;
+}
+
+.loginContent {
+  position: absolute;
+  inset: 0;
+  transition: filter 1.6s ease-in-out;
+}
+
+.loginDissolve {
+  transition: filter 0.6s ease-in-out;
+}
+
+.loginGreyscaled {
+  filter: grayscale(1) brightness(0.62) contrast(0.95);
+  pointer-events: none;
+}
+
+/* Full-width painted backgrounds */
+.bgPaint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.uiLayer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ── Top bar — solid navy, full-width white accent ── */
+.topBar {
+  flex-shrink: 0;
+  height: clamp(68px, 10vh, 94px);
+}
+
+.bgPaint .topBar {
+  background: #00319c;
+  border-bottom: 2px solid #ffffff;
+}
+
+.topBarSpacer {
+  flex-shrink: 0;
+  height: clamp(64px, 9.5vh, 88px);
+}
+
+.mainBg {
+  flex: 1;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #5c84e4 0%,
+    #5279e0 25%,
+    #5279e0 75%,
+    #4e75dc 100%
+  );
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Bottom bar — solid navy, full-width gold accent ── */
+.bottomBar {
+  flex-shrink: 0;
+  height: clamp(68px, 10vh, 94px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(24px, 3.5vmin, 48px);
+}
+
+.bgPaint .bottomBar {
+  margin-top: auto;
+  background: #00319c;
+  border-top: 2px solid #ebb43b;
+}
+
+.uiLayer > .bottomBar {
+  background: transparent;
+}
+
+.cluster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(55px, 7vmin, 75px);
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.divider {
+  width: 1px;
+  align-self: stretch;
+  min-height: clamp(300px, 50vh, 600px);
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.5) 10%,
+    rgba(255, 255, 255, 0.5) 90%,
+    transparent 100%
+  );
+  flex-shrink: 0;
+}
+
+.rightCol {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brandLogo {
+  width: clamp(300px, 24vmin, 300px);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+  margin-bottom: -40px;
+}
+
+.instruction {
+  font-family: var(--font-brand);
+  font-size: clamp(18px, 1.25vmin, 13px);
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logOffBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: filter 0.15s ease;
+}
+
+.logOffIcon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+.logOffBtn:hover {
+  filter: brightness(1.12);
+}
+
+.restartLabel {
+  font-family: var(--font-brand);
+  font-size: clamp(13px, 1.25vmin, 15px);
+  font-weight: 500;
+  color: #ffffff;
+  pointer-events: none;
+  user-select: none;
+}
+
+.footerRight {
+  font-family: var(--font-brand);
+  font-size: clamp(15px, 1.15vmin, 12px);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: right;
+  line-height: 1.55;
+  max-width: 420px;
+}

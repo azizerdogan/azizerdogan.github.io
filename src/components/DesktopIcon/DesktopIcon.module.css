@@ -1,0 +1,64 @@
+.icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: clamp(96px, 11vmin, 112px);
+  padding: 6px 4px 4px;
+  border: none;
+  background: transparent;
+  pointer-events: auto;
+  cursor: default;
+  color: #ffffff;
+  font-family: var(--font-xp);
+  font-size: clamp(12px, 1.35vmin, 14px);
+  line-height: 1.15;
+  text-align: center;
+}
+
+.highlight {
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.icon:hover .highlight {
+  background: rgba(49, 106, 197, 0.42);
+  border-color: rgba(123, 174, 255, 0.55);
+}
+
+.icon.selected .highlight {
+  background: rgba(12, 72, 168, 0.62);
+  border-color: rgba(49, 106, 197, 0.95);
+}
+
+.icon:active .highlight,
+.icon.selected:hover .highlight {
+  background: rgba(8, 48, 130, 0.72);
+  border-color: rgba(30, 80, 180, 1);
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  width: clamp(48px, 6vmin, 56px);
+  height: clamp(48px, 6vmin, 56px);
+  display: block;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+.label {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  word-break: break-word;
+  text-shadow:
+    1px 1px 0 #000000,
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000;
+}

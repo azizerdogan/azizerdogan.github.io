@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Franklin Gothic';
+  src: url('../assets/fonts/OPTIFranklinGothic-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tahoma XP';
+  src: url('../assets/fonts/Tahoma Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --xp-black: #000000;
+  --xp-luna-blue: #4a6cc7;
+  --xp-dark-blue: #1b3a8c;
+  --xp-loading-cube: #3a78bd;
+  --xp-gold: #e8b020;
+  --xp-white: #ffffff;
+  --font-ui: 'Tahoma', 'Segoe UI', sans-serif;
+  --font-brand: 'Franklin Gothic', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+  --font-xp: 'Tahoma XP', 'Tahoma', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-ui);
+  background: var(--xp-black);
+  color: var(--xp-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.xp-screen {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+}

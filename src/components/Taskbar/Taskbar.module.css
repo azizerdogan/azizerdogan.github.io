@@ -1,0 +1,226 @@
+.taskbar {
+  position: relative;
+  z-index: 130;
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  background-color: #245ddb;
+  background-image: linear-gradient(
+    180deg,
+    #3168d5 2.8%,
+    #4993e6 7%,
+    #286add 14.1%,
+    #2359d6 19.9%,
+    #2157d7 36.3%,
+    #245ddb 57.2%,
+    #2662df 75.4%,
+    #2663e0 90.7%,
+    #1e50c4 94.9%,
+    #3155b0 100%
+  );
+  box-shadow: inset 0 1px 0 rgba(140, 190, 255, 0.45);
+  user-select: none;
+}
+
+.leading {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  gap: 6px;
+  padding-right: 6px;
+  height: 100%;
+}
+
+.startBtn {
+  position: relative;
+  flex-shrink: 0;
+  width: 99px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.startBtnBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+
+.tasklist {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  height: 25px;
+  margin-top: 2.5px;
+  gap: 0;
+}
+
+.trailing {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.systemTray {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.trayIcons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1px;
+  height: 30px;
+  padding: 3px 8px 3px 8px;
+  background: linear-gradient(
+    180deg,
+    #095bc9 2.5%,
+    #19b9f3 5.4%,
+    #19b9f3 9.8%,
+    #149eed 10.6%,
+    #1290e8 19.5%,
+    #0d8dea 60.2%,
+    #0f9eef 80.9%,
+    #119deb 90.3%,
+    #226bce 97.2%
+  );
+  box-shadow: -1px 0 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.trayIcons::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  right: 36%;
+  bottom: 2px;
+  height: 4px;
+  background: linear-gradient(180deg, rgba(26, 215, 250, 0.33), transparent);
+  pointer-events: none;
+}
+
+.trayIcon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+.volumeWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.volumeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.volumeBtn:hover {
+  filter: brightness(1.1);
+}
+
+.crtBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.crtBtnOn:hover {
+  filter: brightness(1.1);
+}
+
+.crtBtnOff {
+  filter: brightness(0.72) saturate(0.75);
+}
+
+.crtBtnOff:hover {
+  filter: brightness(0.82) saturate(0.85);
+}
+
+.clock {
+  font-family: var(--font-xp);
+  font-size: 11px;
+  color: #ffffff;
+  line-height: 1;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
+/* Program tab — ready for open windows */
+.programTab {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  max-width: 160px;
+  min-width: 36px;
+  height: 25px;
+  padding: 5px 15px 4px 10px;
+  border: 1px solid rgba(8, 41, 111, 0.5);
+  border-radius: 3px;
+  background: linear-gradient(180deg, #164dbc 0%, #184eb8 100%);
+  box-shadow:
+    inset -1px -1px 3px #2a5db6,
+    inset 1px 0.5px 2px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.programTabActive {
+  background: linear-gradient(
+    180deg,
+    #4892f7 0%,
+    #397df3 30%,
+    #3980f4 66%,
+    #3981f4 100%
+  );
+  box-shadow:
+    inset 2px 0 2px rgba(154, 197, 255, 0.5),
+    inset -1px -0.5px 3px #2652b0;
+}
+
+.programTabIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+}
+
+.programTabLabel {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-xp);
+  font-size: 11px;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

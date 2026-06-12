@@ -1,0 +1,90 @@
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-brand);
+  background: #00319c;
+}
+
+.bgPaint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.uiLayer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topBar {
+  flex-shrink: 0;
+  height: clamp(68px, 10vh, 94px);
+}
+
+.bgPaint .topBar {
+  background: #00319c;
+  border-bottom: 2px solid #ffffff;
+}
+
+.topBarSpacer {
+  flex-shrink: 0;
+  height: clamp(68px, 10vh, 94px);
+}
+
+.mainBg {
+  flex: 1;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #5c84e4 0%,
+    #5279e0 25%,
+    #5279e0 75%,
+    #4e75dc 100%
+  );
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomBar {
+  flex-shrink: 0;
+  height: clamp(68px, 10vh, 94px);
+}
+
+.bgPaint .bottomBar {
+  margin-top: auto;
+  background: #00319c;
+  border-top: 2px solid #ebb43b;
+}
+
+.bottomBarSpacer {
+  flex-shrink: 0;
+  height: clamp(68px, 10vh, 94px);
+}
+
+.welcomeText {
+  font-family: var(--font-brand);
+  font-size: clamp(42px, 7.5vmin, 64px);
+  font-weight: 500;
+  font-style: italic;
+  color: #ffffff;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin: 0;
+  text-shadow:
+    0 2px 6px rgba(0, 20, 80, 0.45),
+    0 0 24px rgba(255, 255, 255, 0.12);
+  user-select: none;
+}
